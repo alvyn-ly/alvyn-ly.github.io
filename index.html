@@ -5,8 +5,8 @@
 	<title> Basic Login </title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/v2.3.8/angular-strap.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/v2.3.8/angular-strap.tpl.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.3.12/angular-strap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.3.12/angular-strap.tpl.min.js"></script>
 
 	<script src="angular-route.min.js"></script>
 	<script src="app.js"></script>
@@ -15,6 +15,17 @@
 <body ng-app="mainApp">
 
 	<header>
+		<nav class="navbar navbar-default" role="navigation" bs-navbar>
+			<div class="navbar-header">
+			<img src ="https://cdn4.iconfinder.com/data/icons/eldorado-food-1/40/pepper_chili-512.png" alt="pepper" height="50" width="50">
+			</div>
+			<ul class="nav navbar-nav">
+				<li data-match-route="/$"><a href="#/">Home</a></li>
+				<li data-match-route="/page-one"><a href="#/page-one">Page One</a></li>
+				<li data-match-route="/page-two.*"><a href="#/page-two/sub-a">Page Two</a></li>
+			</ul>
+		</nav>
+
 		<h1>
 			The Spicy Hub! <img src ="https://cdn4.iconfinder.com/data/icons/eldorado-food-1/40/pepper_chili-512.png" alt="pepper">
 		</h1>
@@ -22,6 +33,8 @@
 	</header>
 
 	<p>Welcome to the site. This is where we keep Alvyn Ly's personal projects, regardless of how serious or silly they are. It may be a little empty at the moment, but I assure you it will be a grand place in the near future. </p>
+
+	<div ng-view></div>
 
 	<footer class="footer navbar-fixed-bottom ">
 		<div class="container">
