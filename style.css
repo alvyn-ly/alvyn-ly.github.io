@@ -4,6 +4,8 @@ header {
 	padding-left: 20%;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
+	background-image: url("pepper.png");
+	background-position: left 25px;
 }
 footer {
 	color: white;
@@ -13,7 +15,8 @@ footer {
 	background: radial-gradient(circle, rgba(0, 0, 0, 0.75) 30%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.0) 40%);
 }
 body {
-	font-family: 'Saira Condensed', sans-serif;
+	padding-top: 0px;
+	font-family: 'Dosis', sans-serif;
 	background-image: url("BG.jpg");
 	background-size: cover; 
 	background-repeat: no-repeat;
