@@ -1,0 +1,29 @@
+header {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+footer {
+	color: white;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: radial-gradient(circle, rgba(0, 0, 0, 0.75) 30%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.0) 40%);
+}
+body {
+	background-image: url("BG.jpg");
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-color: #cccccc;
+}
+.tab-test{
+	border: 2px solid #73AD21;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 0px 0px 30px 30px;
+
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
