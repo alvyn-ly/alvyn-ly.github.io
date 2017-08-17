@@ -1,11 +1,11 @@
-var app = angular.module('mainApp', ['ngRoute','ui.bootstrap']);
+var app = angular.module('mainApp', ['ngAnimate', 'mgcrea.ngStrap', 'ngRoute']);
 
 app.config(function($routeProvider) {
 	$routeProvider
-	.when('/', {
-		templateUrl: 'index.html'
+	.when('/home', {
+		templateUrl: 'front.html'
 	})
 	.otherwise({
-		redirectTo: '/'
+		redirectTo: '/home'
 	});
 });
