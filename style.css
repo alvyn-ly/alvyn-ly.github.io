@@ -6,6 +6,8 @@ header {
 	color: white;
 	background-image: url("pepper.png");
 	background-position: left 25px;
+	background-size: cover; 
+	background-repeat: no-repeat;
 }
 footer {
 	color: white;
