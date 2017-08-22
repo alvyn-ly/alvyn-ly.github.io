@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title> Basic Login </title>
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.css">
+	<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.css"> -->
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="//mgcrea.github.io/angular-strap/styles/libs.min.css">
-	<link rel="stylesheet" href="//mgcrea.github.io/angular-strap/styles/docs.min.css">
+	<!-- <link rel="stylesheet" href="//mgcrea.github.io/angular-strap/styles/libs.min.css"> -->
+	<!-- <link rel="stylesheet" href="//mgcrea.github.io/angular-strap/styles/docs.min.css"> -->
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 	<script src="//cdn.jsdelivr.net/angularjs/1.5.5/angular-animate.min.js" data-semver="1.5.5"></script>
@@ -20,22 +20,24 @@
 
 <body ng-app="mainApp">
 
-	<header>
-		<h1>
-			The Spicy Hub! <img src ="https://cdn4.iconfinder.com/data/icons/eldorado-food-1/40/pepper_chili-512.png" alt="pepper" height="50" width="50">
-		</h1>
-		<p>Homesite and Portfolio of Alvyn Ly</p>
-	</header>
-
-	<div ng-view></div>
-
-	
-
-	<footer>
-		<div class="container">
-			<p>© 2016 Spicy Tech LL.</p>
+	<div id="pageWrapper">
+		<div id="bodywrapper">
+			<div class="columnwrap">
+				<div class="cell col1">
+					<div class="content">Column 1: Shrink-to-Fit Width</div>
+				</div>
+				<div class="cell col2">
+					<div class="content">
+						<div ng-view></div>
+						<div id="footerWrapper">
+							<div class="container">
+								<p>© 2016 Spicy Tech LL.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</footer>
-
+	</div>
 </body>
 </html>
