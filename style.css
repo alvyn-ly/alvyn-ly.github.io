@@ -99,6 +99,7 @@ html, body {
 	}
 	/* navbar */
 	.navbar-default {
+		font-family: 'Quicksand', sans-serif;
 		/*background-color: #F8F8F8;*/
 		/*border-color: #E7E7E7;*/
 		background-color: rgba(205, 150, 14, 0.5);
@@ -110,8 +111,15 @@ html, body {
 	.navbar-default .navbar-nav > .active > a:focus {
 		color: yellow;
 		background-color: #B78000;
+		height: 50px;
+		line-height: 25px;
+	}
+	.navbar-default .navbar-nav > li {
+
 	}
 	.navbar-default .navbar-nav > li > a {
+		height: 50px;
+		line-height: 25px;
 		color: white;
 	}
 	/* Title */
@@ -138,7 +146,6 @@ html, body {
 	}
 	.navbar-brand {
 		float:none;
-		font-size: 35px;
 		color: black;
 	}
 	.navbar ul {
