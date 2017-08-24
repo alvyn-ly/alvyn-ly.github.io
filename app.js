@@ -11,9 +11,18 @@ app.config(function($locationProvider, $routeProvider) {
 	.when('/let-it-ryde', {
 		templateUrl: 'front.html'
 	})
-	// .otherwise({
-	// 	redirectTo: '/'
-	// })
+	.when('/svic', {
+		templateUrl: 'front.html'
+	})
+	.when('/bounce', {
+		templateUrl: 'front.html'
+	})
+	.when('/about', {
+		templateUrl: 'front.html'
+	})
+	.otherwise({
+		redirectTo: '/'
+	})
 	;
 	$locationProvider.html5Mode(true); 
 });
