@@ -17,7 +17,7 @@ html, body {
 	bottom: 0px;
 	left: 0;
 
-	background: black;
+	background: #FFC62B;
 }
 .columnwrap {
 	width: 100%;
@@ -27,8 +27,7 @@ html, body {
 	height: 100%;
 }
 .columnwrap .col1 {
-	border-right: 3px solid #4C2200;
-
+	border-right: 5px solid #CD960E;
 	float: left;
 	width: 300px;
 	/*border: 4px dotted black;*/
@@ -36,48 +35,53 @@ html, body {
 }
 .columnwrap .col1 .content {
 	color: white;
-	padding: 50px 0;
+	padding: 20px 0;
 	text-align: center;
 	height: inherit;
 	display: inline-block;
-	    display: block;
-    margin: auto;
+	display: block;
+	margin: auto;
 	overflow-y: auto;
 
 }
 .columnwrap .col2 {
-	/*border: 4px dotted red;*/
+	/*border-left: 20px solid rgba(255, 198, 43, 0.1);*/
 	overflow-y: hidden;
+
 }
 .columnwrap .col2 .content {
 	height: inherit;
 	overflow-y: auto;
-	background-image: url("img/BG3-2.jpg");
+	background-image: url("img/BG-2.jpg");
 	background-size: cover; 
 	background-repeat: no-repeat;
-	background-color: #cccccc;
+	background-color: white;
 }
 .columnwrap .col2 .content::-webkit-scrollbar {
 	display: none;
 }
 #footerWrapper {
-	width: 100%;
+	width: 90%;
 	position: absolute;
 	bottom: 0px;
-	left: 38%;
+	left: 42%;
 	color: white;
-	height: 30px;
+	height: 12px;
 	/*line-height: 30px;*/
 	text-align: center;
+	font-size: 10px;
 	background: radial-gradient(circle, rgba(0, 0, 0, 0.75) 30%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.0) 40%);
 }
 .tabbing {
 	display: flex;
 }
 .tab-test{
-	border: 2px solid #73AD21;
+	border: 3px solid #CD960E;
 	width: 90%;
-	background-color: rgba(255, 255, 255, 0.75);
+	background-color: rgba(255, 255, 255, 0.6);
+	/*	background-image: url("img/BG3-2.jpg");
+	background-size: cover; 
+	background-repeat: no-repeat;*/
 	border-radius: 30px 30px 30px 30px;
 	/*display: inline-flex;*/
 	margin: auto;
@@ -86,3 +90,67 @@ html, body {
 	padding-left: 50px;
 	padding-right: 50px;
 }
+
+/*navbar formatting - vertical*/
+
+/*@media (min-width: 768px) {*/
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: white;
+	}
+	/* navbar */
+	.navbar-default {
+		/*background-color: #F8F8F8;*/
+		/*border-color: #E7E7E7;*/
+		background-color: rgba(205, 150, 14, 0.5);
+		border-color: rgba(205, 150, 14, 0.5);
+
+	}
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+		color: yellow;
+		background-color: #B78000;
+	}
+	.navbar-default .navbar-nav > li > a {
+		color: white;
+	}
+	/* Title */
+	.navbar-default .navbar-brand {
+		color: black;
+	}
+	.navbar-default .navbar-brand:hover,
+	.navbar-default .navbar-brand:focus {
+		color: grey;
+	}
+	/* end title */
+	.navbar .navbar-collapse {
+		padding: 0;
+		max-height: none;
+		text-align: center;
+	}
+	.navbar-header {
+		float: none;
+		display: block;
+		/*float: left;*/
+		padding: 15px;
+		text-align: center;
+		width: 100%;
+	}
+	.navbar-brand {
+		float:none;
+		font-size: 35px;
+		color: black;
+	}
+	.navbar ul {
+		float: none;
+		display: block;
+	}
+	.navbar li {
+		float: none;
+		display: block;
+	}
+	.navbar li a {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+/*}*/
