@@ -2,42 +2,59 @@
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
 	<!-- Header -->
-	<div class="w3-container" style="margin-top:80px" id="showcase">
+	<div class="w3-container panel-title" style="margin-top:80px" id="showcase">
 		<h1 class="w3-jumbo"><b>Collections of Work</b></h1>
-		<h1 class="w3-xxxlarge w3-text-orange"><b>Showcase.</b></h1>
-		<hr style="width:50px;border:5px solid orange" class="w3-round">
 	</div>
 
 	<!-- Photo grid (modal) -->
-	<div class="w3-row-padding">
-		<div class="w3-third">
-			<img src="img/dotleaflet1.jpg" class="w3-round w3-card-4 w3-hover-opacity w3-pad" style="width:100%;" onclick="onClick(this)" alt="Project tracking and search.">
-			<br><br>
-			<img src="img/ryde1.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Clean, minimal login screen with essential options.">
-			<br><br>
-			<img src="img/wump1.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Simplistic Menu for a first time Unity game.">
-			<br><br>
-			<img src="img/svic1.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Major event with 50+ teams presenting for project funding.">
-		</div>
+	<div class="panel-group" role="tablist" data-animation="am-fade" aria-multiselectable="true" bs-collapse>
+		<div class="panel panel-default">
 
-		<div class="w3-third">
-			<img src="img/dotleaflet2.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Full Salesforce integration and data output">
-			<br><br>
-			<img src="img/ryde2.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Google Maps integration with easy to use interface.">
-			<br><br>
-			<img src="img/wump2.jpg" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Multi-source lighting with fully fleshed out soundwork and gameplay.">
-			<br><br>
-			<img src="img/svic2.jpg" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Contestants present in under a minute to a line of judges that used our judging app.">
-		</div>
+			<div class="panel-heading" role="tab">
+				<div class="w3-container panel-title" style="margin-top:0px" id="showcase">
+					<a bs-collapse-toggle>
+						<h1 class="w3-xxxlarge w3-text-orange w3-hover-opacity"><b>Showcase.</b></h1>
+						<hr style="width:50px;border:5px solid orange" class="w3-round">
+					</a>
+				</div>
+			</div>
+			<div class="panel-collapse" role="tabpanel" bs-collapse-target>
+				<div class="panel-body">
+					<div class="w3-row-padding">
+						<div class="w3-third">
+							<img src="img/dotleaflet1.jpg" class="w3-round w3-card-4 w3-hover-opacity w3-pad" style="width:100%;" onclick="onClick(this)" alt="Project tracking and search.">
+							<br><br>
+							<img src="img/ryde1.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Clean, minimal login screen with essential options.">
+							<br><br>
+							<img src="img/wump1.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Simplistic Menu for a first time Unity game.">
+							<br><br>
+							<img src="img/svic1.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Major event with 50+ teams presenting for project funding.">
+						</div>
 
-		<div class="w3-third">
-			<img src="img/dotleaflet3.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%;" onclick="onClick(this)" alt="Fleshed out documentation and instructions">
-			<br><br>
-			<img src="img/ryde3.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Dynamic routing service with driver to user notification.">
-			<br><br>
-			<img src="img/wump3.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Designed in Unity, a mixture of free assets and custom made textures">
-			<br><br>
-			<img src="img/svic3.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Connected to the school site, our SVIC app was esily accessible and made judging quick and report generation quicker.">
+						<div class="w3-third">
+							<img src="img/dotleaflet2.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Full Salesforce integration and data output">
+							<br><br>
+							<img src="img/ryde2.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Google Maps integration with easy to use interface.">
+							<br><br>
+							<img src="img/wump2.jpg" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Multi-source lighting with fully fleshed out soundwork and gameplay.">
+							<br><br>
+							<img src="img/svic2.jpg" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Contestants present in under a minute to a line of judges that used our judging app.">
+						</div>
+
+						<div class="w3-third">
+							<img src="img/dotleaflet3.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%;" onclick="onClick(this)" alt="Fleshed out documentation and instructions">
+							<br><br>
+							<img src="img/ryde3.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Dynamic routing service with driver to user notification.">
+							<br><br>
+							<img src="img/wump3.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Designed in Unity, a mixture of free assets and custom made textures">
+							<br><br>
+							<img src="img/svic3.png" class="w3-round w3-card-4 w3-hover-opacity" style="width:100%" onclick="onClick(this)" alt="Connected to the school site, our SVIC app was esily accessible and made judging quick and report generation quicker.">
+						</div>
+					</div>	
+				</div>
+			</div>
+
+
 		</div>
 	</div>
 
