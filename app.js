@@ -6,10 +6,13 @@ app.config(function($locationProvider, $routeProvider) {
 		templateUrl: 'front.html'
 	})
 	.when('/dotleaflet', {
-		templateUrl: 'front.html'
+		templateUrl: 'dotleaflet.html'
 	})
-	.when('/let-it-ryde', {
-		templateUrl: 'front.html'
+	.when('/let-it-ride', {
+		templateUrl: 'ride.html'
+	})
+	.when('/other', {
+		templateUrl: 'other.html'
 	})
 	.when('/svic', {
 		templateUrl: 'front.html'
